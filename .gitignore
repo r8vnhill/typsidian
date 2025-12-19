@@ -6,7 +6,17 @@
 .idea
 
 # npm
-node_modules
+node_modules/
+bun.lock
+
+# Logs (npm/yarn/pnpm)
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local development helpers
+dev-plugins/
 
 # Don't include the compiled main.js file in the repo.
 # They should be uploaded to GitHub releases instead.

@@ -8,7 +8,9 @@
 		"dev": "node esbuild.config.mjs",
 		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
 		"version": "node version-bump.mjs && git add manifest.json versions.json",
-		"lint": "eslint ."
+		"lint": "eslint .",
+		"copy:dev": "node scripts/copy-dev.cjs",
+		"copy:dev:watch": "node scripts/copy-dev.cjs --watch"
 	},
 	"keywords": [],
 	"license": "0-BSD",
@@ -24,6 +26,7 @@
 		"jiti": "2.6.1"
 	},
 	"dependencies": {
+		"@myriaddreamin/typst.ts": "^0.6.1-rc5",
 		"obsidian": "latest"
 	}
 }
